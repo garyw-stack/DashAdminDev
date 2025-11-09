@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Version History</title>
+    <meta name="description" content="Complete changelog of system updates and improvements">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <button class="menu-btn" id="menuBtn">☰</button>
+
+  <!-- Sidebar -->
+  <nav class="sidebar" id="sidebar">
+    <ul>
+      <li><a href="index.html">Version Overview</a></li>
+      <li><a href="version123.html">Version 1.2.3</a></li>
+      <li><a href="version122.html">Version 1.2.2</a></li>
+      <li><a href="version121.html">Version 1.2.1</a></li>
+      <li><a href="version120.html">Version 1.2.0</a></li>
+      <li><a href="version113.html">Version 1.1.3</a></li>
+      <li><a href="version112.html">Version 1.1.2</a></li>
+      <li><a href="version111.html">Version 1.1.1</a></li>
+      <li><a href="version110.html">Version 1.1.0</a></li>
+      <li><a href="version105.html">Version 1.0.5</a></li>
+      <li><a href="version104.html">Version 1.0.4</a></li>
+      <li><a href="version103.html">Version 1.0.3</a></li>
+      <li><a href="version102.html">Version 1.0.2</a></li>
+      <li><a href="version101.html">Version 1.0.1</a></li>
+      <li><a href="version100.html">Version 1.0.0</a></li>
+      <li><a href="version005.html">Version 0.0.5</a></li>
+      <li><a href="version004.html">Version 0.0.4</a></li>
+      <li><a href="version003.html">Version 0.0.3</a></li>
+      <li><a href="version002.html">Version 0.0.2</a></li>
+      <li><a href="version001.html">Version 0.0.1</a></li>
+      <li><a href="version000.html">Version 0.0.0</a></li>
+      </ul>
+  </nav>
+
+  <!-- Overlay (for mobile) -->
+  <div class="overlay" id="overlay"></div>
+  <div class="main-content" id="mainContent">
+
+    <!--Main Content-->
+    <div class="container">
+        <h1>Version Unknown Notes</h1>
+        <h2 class="future">Future Development Version</h2>
+      <div>
+        <div class="version">
+            <h2>
+                <span>Updated Location information</span>
+            </h2>
+            <p>Updated Location information for Shopify Sales store selection</p>
+        <ul>
+          <li>Update Shopify Store Field to become a dropdown field with information populated from shopfiy_store table</li>
+          <li>Selection will determine which store is used for Point of Sale products and Discount codes</li>
+        </ul>
+        </div>
+
+        <div class="version">
+            <h2>
+                <span>Update QR Code Functionality</span>
+            </h2>
+            <p>Update QR Code Functionality for use between Multiple Store Loactions. This will allow Point of Sale to determine which Shopify store to use based
+              on discount code scanned in conjuction with the Shopify Store Location update listed above.
+            </p>
+        <ul>
+          <li>Add additional field to the generate QR Code Page to allow for second discount code</li>
+          <li>Update Column on QR Codes list to deisplay addtional fields</li>
+          <li>Update Tables to accomadate new updates</li>
+        </ul>
+        </div>
+
+        <div class="version">
+            <h2>
+                <span>Establish Tax workflow for Point of Sale</span>
+            </h2>
+            <p>Establish Tax workflow for Point of Sale for Locations needing to display Taxes on sales.</p>
+        <ul>
+          <li>Update Shopify to use Metafields feature on products to set a taxCode</li>
+          <li>Update taxCode Tables to accomadate multiple tax amounts based on selected taxCode_id </li>
+          <li>Update Receipts to display tax breakdowns when a taxCode is used. If not used tax fields will be hidden on receipt</li>
+        </ul>
+        </div>
+
+        <div class="version">
+            <h2>
+                <span>Update Widgets</span>
+            </h2>
+            <p>Update Widgets for the Dash Admin dashboard, as well as add Date and Location filters. These are still in the brainstorm phase.</p>
+            <p>Thoughts Listed below:</p>
+        <ul>
+          <li>Current Total Sales for Location(s)</li>
+          <li>Current Sales Based on Sale Device(s)</li>
+          <li>Breakdown of Packages/Products Sold</li>
+        </ul>
+        </div>
+
+      </div>
+
+        <div class="footer">
+            <p>Version history last updated: <strong>November 7, 2025</strong> • Maintained with care</p>
+        </div>
+    </div>
+   </div>
+<script src="script.js"></script>
+</body>
+</html>

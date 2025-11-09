@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Version History</title>
+    <meta name="description" content="Complete changelog of system updates and improvements">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <button class="menu-btn" id="menuBtn">☰</button>
+
+  <!-- Sidebar -->
+  <nav class="sidebar" id="sidebar">
+    <img class="navheader" src="logo_default.png">
+    <ul>
+      <li><a href="versionunknown.html">Version Unknown</a></li>
+      <li><a href="version123.html">Version 1.2.3</a></li>
+      <li><a href="version122.html">Version 1.2.2</a></li>
+      <li><a href="version121.html">Version 1.2.1</a></li>
+      <li><a href="version120.html">Version 1.2.0</a></li>
+      <li><a href="version113.html">Version 1.1.3</a></li>
+      <li><a href="version112.html">Version 1.1.2</a></li>
+      <li><a href="version111.html">Version 1.1.1</a></li>
+      <li><a href="version110.html">Version 1.1.0</a></li>
+      <li><a href="version105.html">Version 1.0.5</a></li>
+      <li><a href="version104.html">Version 1.0.4</a></li>
+      <li><a href="version103.html">Version 1.0.3</a></li>
+      <li><a href="version102.html">Version 1.0.2</a></li>
+      <li><a href="version101.html">Version 1.0.1</a></li>
+      <li><a href="version100.html">Version 1.0.0</a></li>
+      <li><a href="version005.html">Version 0.0.5</a></li>
+      <li><a href="version004.html">Version 0.0.4</a></li>
+      <li><a href="version003.html">Version 0.0.3</a></li>
+      <li><a href="version002.html">Version 0.0.2</a></li>
+      <li><a href="version001.html">Version 0.0.1</a></li>
+      <li><a href="version000.html">Version 0.0.0</a></li>
+      <li class="navvoid"></li>
+    </ul>
+
+    
+  </nav>
+
+  <!-- Overlay (for mobile) -->
+  <div class="overlay" id="overlay"></div>
+  <div class="main-content" id="mainContent">
+
+    <!--Main Content-->
+    <div class="container">
+        <h1>Version History</h1>
+
+        <div class="version" id="future">
+            <h2>
+                <span>Unknown <span class="date">(Future)</span></span>
+                <span class="label future-label">Future Development</span>
+            </h2>
+            <ul>
+                <li>Updated Location information for Shopify Sales store selection</li>
+                <li>Update QR Code Functionality for use between Multiple Store Loactions</li>
+                <li>Establishing Tax workflow for Point of Sale</li>
+                <li>Update Widgets</li>
+            </ul>
+        </div>
+
+        <div class="version" id="tbd">
+            <h2>
+                <span>Ver. 1.2.3 <span class="date">(TBA)</span></span>
+                <span class="label tbd-label">Pending Development Version</span>
+            </h2>
+            <ul>
+                <li>Establish Order Refund Method and Workflow to issue refunds to original payment method and clear point card opinion completion</li>
+                <li>Establish a failsafe Kiosk Refund Method and Workflow</li>
+                <li>Create Refund Receipt layout</li>
+                <li>Added “Check Card Balance” to Shopify Sales screen</li>
+                <li>Fix function with Activation Code field when creating a new device to allow Empty value</li>
+                <li>Update to Reports Calculations</li>
+                <li>Added Version History to DashAdmin</li>
+            </ul>
+        </div>
+
+        <div class="version" id="dev">
+            <h2>
+                <span>Ver. 1.2.2 <span class="date">(October 7, 2025)</span></span>
+                <span class="label dev-label">Current Development Version</span>
+            </h2>
+            <ul>
+                <li>Update to Quick Pay options in Shopify Sales to prevent double tapping</li>
+                <li>Update “Dismiss” button in Change owed window to “Open Cash Drawer”</li>
+                <li>Updates to prevent leaving checkout page during Charge Card Transactions</li>
+                <li>Updates to fixed missed information from Orders</li>
+            </ul>
+        </div>
+
+        <div class="version">
+            <h2>
+                <span>Ver. 1.2.1 <span class="date">(August 27, 2025)</span></span>
+            </h2>
+            <ul>
+                <li>Update to fix location filter functionality in Device module</li>
+            </ul>
+        </div>
+
+        <div class="version" id="live">
+            <h2>
+                <span>Ver. 1.2.0 <span class="date">(August 13, 2025)</span></span>
+                <span class="label live-label">Current Live Version</span>
+            </h2>
+            <ul>
+                <li>Update to Charge Card payment to create reset when window is closed</li>
+                <li>Update to Charge Charge Invoice number to Payjunction with new table columns</li>
+                <li>Update to Order workflow to ensure transaction complete in absence of receipt printer</li>
+                <li>Update to Custom Pay entry</li>
+                <li>Update to Transaction ID on receipt</li>
+                <li>Update to Transaction Table to align with Kiosk Table</li>
+            </ul>
+        </div>
+
+        <div class="version">
+            <h2>
+                <span>Ver. 1.1.3 <span class="date">(July 23, 2025)</span></span>
+            </h2>
+            <ul>
+                <li>Update to discount code functionality to prevent multiple discount amounts</li>
+                <li>Shopify Sales UI Updates</li>
+                <li>Fix Declined Charge Card Transaction issues where screen freezes</li>
+                <li>Update to Balance Builder Functionality and UI</li>
+            </ul>
+        </div>
+
+        <div class="version">
+            <h2>
+                <span>Ver. 1.1.2 <span class="date">(July 6, 2025)</span></span>
+            </h2>
+            <ul>
+                <li>Update Exact Change Slider and Payment methods Padding and Size</li>
+                <li>Minor Bug fix to Balance Builder and Create/Split Card window that disabled Slider</li>
+                <li>Minor bug fix to Online order Retrieval disabling side bar</li>
+            </ul>
+        </div>
+
+        <div class="version">
+            <h2>
+                <span>Ver. 1.1.1 <span class="date">(June 30, 2025)</span></span>
+            </h2>
+            <ul>
+                <li>Adjusted Exact Change Button to an Exact Change Slider</li>
+                <li>Applied Focus to Discount Field after Product Selection</li>
+                <li>Minor Bug Fixes to Split and Combined Card Windows disabling sidebar after use</li>
+                <li>Update to Online order retrieval to fetch last 250 order up from last 50 orders</li>
+            </ul>
+        </div>
+
+        <div class="version">
+            <h2>
+                <span>Version 1.1.0 <span class="date">(June 24, 2025)</span></span>
+            </h2>
+            <ul>
+                <li>Updates to tables for initial Live update to Dev site</li>
+                <li>Updates to json file for update to live</li>
+                <li>Update to Enter Deposit functionality to prevent misentry</li>
+            </ul>
+        </div>
+
+        <div class="version">
+            <h2>
+                <span>Ver. 1.0.5 <span class="date">(June 17, 2025)</span></span>
+            </h2>
+            <ul>
+                <li>Update to Quick user swap for Admin and Non-admin user functionality</li>
+                <li>Visual enhancements to the Invoice Display at checkout</li>
+                <li>Update to Phone Number validation in staff page to require +1##########</li>
+                <li>Update to login case sensitivity</li>
+                <li>Update to Internet Order Details, remove reprint receipt</li>
+                <li>Minor fix for QR Code Logo generation, out of memory/parameter error</li>
+            </ul>
+        </div>
+
+        <div class="version">
+            <h2>
+                <span>Ver. 1.0.4 <span class="date">(May 19, 2024)</span></span>
+            </h2>
+            <ul>
+                <li>Minor Bug fix for Multiple Payments with Cash not opening Cash Drawer</li>
+                <li>Minor Bug Fix to discount codes not applying correctly</li>
+                <li>Updated Split/Create Card window to have Minus and Positive 0.5 Options</li>
+            </ul>
+        </div>
+
+        <div class="version">
+            <h2>
+                <span>Ver. 1.0.3 <span class="date">(May 7, 2025)</span></span>
+            </h2>
+            <ul>
+                <li>Update to Start Shift functionality to stay active until Shift Closed</li>
+                <li>Update Transaction By on sales order to display user logged in during sale instead of Shift Started user</li>
+                <li>Update to only allow Shopify Sales window on Point of Sale Device types</li>
+                <li>Update to Quick user to retain last page during switch</li>
+                <li>Minor update to permissions for Transaction lookup feature</li>
+                <li>Enable Permission Based logic for Point of Sale for testing roles</li>
+                <li>Update to Credit Balance in View Transaction to display correctly</li>
+            </ul>
+        </div>
+
+        <div class="version">
+            <h2>
+                <span>Ver. 1.0.2 <span class="date">(April 10, 2025)</span></span>
+            </h2>
+            <ul>
+                <li>Updates to Report Generation layout and added addition values</li>
+                <li>Updated Receipt layout to display Discount if applied to sale</li>
+                <li>Minor bug fix for discount calculation to round correctly</li>
+                <li>Update to prevent Discount on non-point items</li>
+            </ul>
+        </div>
+
+        <div class="version">
+            <h2>
+                <span>Ver. 1.0.1 <span class="date">(February 19, 2025)</span></span>
+            </h2>
+            <ul>
+                <li>Update to Split/Create Card window for splitting paid/bonus points correctly</li>
+                <li>Minor bug updates to discount field</li>
+                <li>Updated Printer Details and Edit Printer Pages to allow for Printer Certificate upload</li>
+                <li>Added a Numeric Keypad to User login/Quickswap and Dollar entry fields</li>
+                <li>Updated enterQty window to include decimal values</li>
+                <li>Minor Calculation fix to Generated reports to calculate Multiple Payment Cash Amounts</li>
+                <li>Minor Bug fix in Quick Selection Date filter to select correct dates</li>
+                <li>Minor Bug fix in transaction look up screen causing infinite load screen</li>
+            </ul>
+        </div>
+
+        <div class="version">
+            <h2>
+                <span>Ver. 1.0.0 <span class="date">(January 28, 2025)</span></span>
+            </h2>
+            <ul>
+                <li>Establish QR Code Feature and functionality</li>
+                <li>Establish QR Code Analytics for sales and redirects</li>
+                <li>Add Inactive/Delete function to QR Code based on analytics status</li>
+                <li>Update to Location Settings to add Full URL for QR Codes</li>
+                <li>Update Sidebar to be disabled if another Pop-up window is active</li>
+                <li>Minor Calculation bug fix for Charge Card for Multiple Payments on End of Day entry</li>
+                <li>Update to order detail page to fetch all card data available for a particular order and if card has been cleared a balance_id appears when hovering</li>
+                <li>Added Download and Print feature to all reporting sections</li>
+                <li>Update Reports to display Locations and Devices related to report generated</li>
+            </ul>
+        </div>
+
+        <div class="version">
+            <h2>
+                <span>Ver. 0.0.5 <span class="date">(December 31, 2024)</span></span>
+            </h2>
+            <ul>
+                <li>Establish a Sales Report Page for End of Month reporting with locations, device types and devices, date range, and 2 report types (Complete and Summary)</li>
+                <li>Added visual indicators to Shift manager for Shift Sales status</li>
+                <li>Minor bug fix for reprinting transaction receipts for Multiple Payment transactions</li>
+                <li>Established Transaction Order Number Look up feature</li>
+                <li>Update Receipts to have transaction Order Number and Barcode at bottom of receipt</li>
+                <li>Order Detail page updates; Functional and Visual</li>
+            </ul>
+        </div>
+
+        <div class="version">
+            <h2>
+                <span>Ver. 0.0.4 <span class="date">(December 16, 2024)</span></span>
+            </h2>
+            <ul>
+                <li>Update Receipt Header to display information based on Location Settings</li>
+                <li>Update Receipt Layout for Products and hiding line items with 0 value</li>
+                <li>Minor Bug fix for cash drawer during Multiple Payment transactions</li>
+                <li>Update to Cash Drawer functionality to only open in the event of a Cash Transaction</li>
+                <li>Discount Functional update and Minor UI visual fixes</li>
+                <li>Multiple Payment Value field update to display remaining balance</li>
+                <li>Update Open and Close button to trigger Cash Drawer</li>
+                <li>Update Sales Entry window</li>
+            </ul>
+        </div>
+
+        <div class="version">
+            <h2>
+                <span>Ver. 0.0.3 <span class="date">(November 28, 2024)</span></span>
+            </h2>
+            <ul>
+                <li>Minor Bug Fix for Payjunction terminal after Charge Card Transaction staying In Progress</li>
+                <li>Update to location page for Both Develop and Live Payjunction with a Terminal ID check with table update to accommodate</li>
+                <li>Updated Shopify Sales to use Printer Device information based on device settings and location</li>
+                <li>Establish Printer Details and Add Printer page to store Receipt Printer information with filters</li>
+            </ul>
+        </div>
+
+        <div class="version">
+            <h2>
+                <span>Ver. 0.0.2 <span class="date">(November 15, 2024)</span></span>
+            </h2>
+            <ul>
+                <li>Visual updates to Order List page and Column updates</li>
+                <li>Visual updates to Order Details page</li>
+                <li>Update Oncard value to be a Drilldown link to card transaction page</li>
+                <li>Update Shift Start and End language to Open and Close</li>
+                <li>Added Change Due pop-up window during Cash Transactions</li>
+                <li>Minor Bug Fix to Point rounding during Create/Split Card window</li>
+                <li>Added Toggle and Value field to Locations page for Balance Build and Create/Split Card window threshold bypassing hardcode default of 60 points</li>
+            </ul>
+        </div>
+
+        <div class="version">
+            <h2>
+                <span>Ver. 0.0.1 <span class="date">(November 7, 2024)</span></span>
+            </h2>
+            <ul>
+                <li>Minor Bug fix to Online Order date filter and Search bar case-sensitivity</li>
+                <li>Minor Bug fix to Roles page for select all feature</li>
+                <li>Minor Discount code fix to make greater than or equal amount</li>
+                <li>Visual UI Updates to Payment window to include Pending card Balance and Oncard Numbers prior to final payment</li>
+            </ul>
+        </div>
+
+        <div class="version" id="og">
+            <h2>
+                <span>Ver. 0.0.0 <span class="date">(Before November 1, 2024)</span></span>
+                <span class="label original-label">Original Version</span>
+            </h2>
+            <ul>
+                <li>Unknown Updates</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p>Version history last updated: <strong>November 5, 2025</strong> • Maintained with care</p>
+        </div>
+    </div>
+   </div>
+<script src="script.js"></script>
+</body>
+</html>
