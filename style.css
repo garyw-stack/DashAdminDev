@@ -222,6 +222,14 @@
       background-color: black !important; 
     }
 
+    #sidebar a.active { 
+      background: black; 
+      color: #fff; 
+    }
+    #toggle-sidebar { 
+      display: none; 
+    }
+
     /* Custom Scrollbar for Sidebar (WebKit) */
     .sidebar ul::-webkit-scrollbar {
         width: 8px;
@@ -345,8 +353,10 @@
         }
     }
 
-
+   
    .navheader{
-    height: 100px;
+    height: 125px;
     margin: 0px 50px;
    }
+
+   
