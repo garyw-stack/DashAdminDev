@@ -12,29 +12,9 @@
 
   <!-- Sidebar -->
   <nav class="sidebar" id="sidebar">
-    <ul>
-      <li><a href="index.html">Version Overview</a></li>
-      <li><a href="version123.html">Version 1.2.3</a></li>
-      <li><a href="version122.html">Version 1.2.2</a></li>
-      <li><a href="version121.html">Version 1.2.1</a></li>
-      <li><a href="version120.html">Version 1.2.0</a></li>
-      <li><a href="version113.html">Version 1.1.3</a></li>
-      <li><a href="version112.html">Version 1.1.2</a></li>
-      <li><a href="version111.html">Version 1.1.1</a></li>
-      <li><a href="version110.html">Version 1.1.0</a></li>
-      <li><a href="version105.html">Version 1.0.5</a></li>
-      <li><a href="version104.html">Version 1.0.4</a></li>
-      <li><a href="version103.html">Version 1.0.3</a></li>
-      <li><a href="version102.html">Version 1.0.2</a></li>
-      <li><a href="version101.html">Version 1.0.1</a></li>
-      <li><a href="version100.html">Version 1.0.0</a></li>
-      <li><a href="version005.html">Version 0.0.5</a></li>
-      <li><a href="version004.html">Version 0.0.4</a></li>
-      <li><a href="version003.html">Version 0.0.3</a></li>
-      <li><a href="version002.html">Version 0.0.2</a></li>
-      <li><a href="version001.html">Version 0.0.1</a></li>
-      <li><a href="version000.html">Version 0.0.0</a></li>
-      </ul>
+     
+     <div id="sidebar-container"></div>
+
   </nav>
 
   <!-- Overlay (for mobile) -->
@@ -46,9 +26,9 @@
         <h1>Version Unknown Notes</h1>
         <h2 class="future">Future Development Version</h2>
       <div>
-        <div class="version">
+        <div class="version" id="prior1">
             <h2>
-                <span>Updated Location information</span>
+                <span>Updated Location information<span class="prior">(Priority 1)</span></span>
             </h2>
             <p>Updated Location information for Shopify Sales store selection</p>
         <ul>
@@ -57,9 +37,9 @@
         </ul>
         </div>
 
-        <div class="version">
+        <div class="version" id="prior2">
             <h2>
-                <span>Update QR Code Functionality</span>
+                <span>Update QR Code Functionality<span class="prior">(Priority 2)</span></span>
             </h2>
             <p>Update QR Code Functionality for use between Multiple Store Loactions. This will allow Point of Sale to determine which Shopify store to use based
               on discount code scanned in conjuction with the Shopify Store Location update listed above.
@@ -71,9 +51,9 @@
         </ul>
         </div>
 
-        <div class="version">
+        <div class="version" id="prior3">
             <h2>
-                <span>Establish Tax workflow for Point of Sale</span>
+                <span>Establish Tax workflow for Point of Sale<span class="prior">(Priority 3)</span></span>
             </h2>
             <p>Establish Tax workflow for Point of Sale for Locations needing to display Taxes on sales.</p>
         <ul>
@@ -93,6 +73,17 @@
           <li>Current Total Sales for Location(s)</li>
           <li>Current Sales Based on Sale Device(s)</li>
           <li>Breakdown of Packages/Products Sold</li>
+        </ul>
+        </div>
+
+        <div class="version">
+            <h2>
+                <span>Establish Order Lookup via Oncard</span>
+            </h2>
+            <p>Establish a Method to look uo an Order based on the Oncard number</p>
+        <ul>
+          <li>Create a Table to a table to store oncard, order_id, balance_id, etc</li>
+          <li>Brainstorm best way to handle the lookup</li>
         </ul>
         </div>
 

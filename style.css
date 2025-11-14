@@ -157,6 +157,25 @@
     #live.version { border-left-color: #27ae60; }
     #og.version { border-left-color: #0101ce; }
 
+    /* Version and Priority */
+    #prior1.version {
+        background-color: #8beff7;
+    }
+    #prior2.version {
+        background-color: #beff81;
+    }
+    #prior3.version {
+        background-color: #e4a1f8;
+    }
+
+    .prior {
+        font-size: 1em;
+        color: #3e4444;
+        font-style: italic;
+        font-weight: normal;
+        margin-left: 15px;
+    }
+
     /* Label Backgrounds */
     .future-label { background-color: #000000; }
     .tbd-label { background-color: #ac08f8; }
@@ -216,6 +235,7 @@
     .sidebar ul li:hover a {
         color: black;
         text-transform: uppercase;
+        cursor: pointer;
     }
 
     .navvoid:hover {
@@ -359,4 +379,14 @@
     margin: 0px 50px;
    }
 
+   a {
+    text-decoration: none;
+    color: inherit;
+    cursor: inherit;
+   }
+
    
+
+
+
+
