@@ -23,38 +23,39 @@
     <!--Main Content-->
     <div class="container">
         <h1>Version 1.2.4 Notes</h1>
-        <h2 class="tbd">Pending Development Version</h2>
+        <h2 class="dev">Current Development Version</h2>
 
 
         <div class="version">
             <h2>
-                <span>Establish a failsafe Kiosk Refund Method and Workflow </span>
+                <span>Visual and Functional Point of Sale Update</span>
             </h2>
-            <p>Establish a Failsafe Refund Method for Kiosk based on remaining points</p>
+            <p>Update Point of Sale homescreen Visual and Functional</p>
             <ul>
-                <li>Premission based</li>
-                <li>Refund Information stored in Table</li>
-                <li>Printed refund Receipt for guest</li>
-                <li>Report record for End of Day and End of Month</li>
+                <li>Added a Card Balance Check Feature to the Sales screen for Ease of use when checkin a balance for customer without need to leave Sales Screen</li>
+                <li>Added a Open Cash Drawer Feature that will trigger Cash drawer and Log the device_id, staff_id, date and time, and the shift_id</li>
+            </ul>
+            
+        </div>
+
+        <div class="version">
+            <h2>
+                <span>Minor Card Edit Bug</span>
+            </h2>
+            <p>Minor bug fix within the Edit Card feature that when switching between LU and AA on the Timeplay Valid Option dropdown causing the Timeplay Valid dropdown to not reset locking the system up</p>
+        </div>
+
+        <div class="version">
+            <h2>
+                <span>Minor Reporting and Calculation Bugs</span>
+            </h2>
+            <p>Minor bug fixes to reporting and calculations functions</p>
+            <ul>
+                <li>Updated the Over/Short calculations to display appropriate amount</li>
+                <li>Adjusted Short amount to use Parentheses instead of a negative sign</li>
+                <li>Minor Bug in Refund Calculations on End of Day reports not displaying correct amount</li>
             </ul>
         </div>
-
-        <div class="version">
-            <h2>
-                <span>Functional Point of Sale Update</span>
-            </h2>
-            <p>Update Point of Sale homescreen to include a "Check Card Balance" button that allows for quick and easy check of Point and E-Ticket balance</p>
-            
-        </div>
-
-        <div class="version">
-            <h2>
-                <span>VOID step in refund process</span>
-            </h2>
-            <p>Update refund process to apply "Void" if the Charge Card refund is the Full amount and on same day Else process as a refund </p>
-            
-        </div>
-
 
        <div class="footer" id="footer-container">
             
@@ -63,6 +64,4 @@
    </div>
 <script src="script.js"></script>
 </body>
-
 </html>
-
