@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Version History</title>
+    <meta name="description" content="Complete changelog of system updates and improvements">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <button class="menu-btn" id="menuBtn">☰</button>
+
+  <nav class="sidebar" id="sidebar">
+     
+     <div id="sidebar-container"></div>
+
+  </nav>
+
+  <!-- Overlay (for mobile) -->
+  <div class="overlay" id="overlay"></div>
+  <div class="main-content" id="mainContent">
+  
+    <!--Main Content-->
+    <div class="container">
+        <h1>Version 1.2.7 Notes</h1>
+        <h2 class="tbd">Pending Development Version</h2>
+
+
+       <div class="version">
+            <h2>
+                <span>Establish Order Lookup via Oncard</span>
+            </h2>
+            <p>Establish a Method to look uo an Order based on the Oncard number</p>
+        <ul>
+          <li>Update Transaction Lookup page for new Search option</li>
+          <li>Transaction lookup - by playcard ->user scans to get balance_Id->balance id found in orders_table_fullfilment-> order found</li>
+        </ul>
+        </div>
+
+        <div class="version">
+            <h2>
+                <span>Point of Sale logic</span>
+            </h2>
+            <p>Update Point of Sale logic to adjust All points to Comp points in the event that Paid Points = 0 when proceeding to Scan barcode window</p>
+        
+        </div>
+
+        <div class="version">
+            <h2>
+                <span>Shopify Time Play Products</span>
+            </h2>
+            <p>Update Shopify Sales Product Logic for Time Play Products</p>
+        <ul>
+          <li>Add Custom Metafield to Products on shopify</li>
+          <ul>
+            <li>balance_timePlayDurationHours - Value entry refers to hour duration from purchase - use (24) for all day</li>
+            <li>balance_timePlayValidCode - AA = Works for all attraction and games & LU = works on selected attraction</li>
+            <li>balance_timePlayValid - Used when LU is entered in the "balance_timePlayValidCode" field - Comma seperated values to determine the Attraction time play is valid</li>
+            <ul>
+                <li>1 = Thrill Rides</li>
+                <li>2 = Adult Rides</li>
+                <li>3 = Kids Rides</li>
+            </ul>
+          </ul>
+          <li>Add Additional Pop-up Windows for Scanning Cards and/or Armbands for Time Play Feature</li>
+          <ul>
+            <li>Time Play Window 1 - Used when less than 10 Time play products are added</li>
+            <ul>
+                <li>Add and Remove Scanned Cards and Armbands individually</li>
+                <li>Edit Start Time in incriments of 15 Minutes if "balance_timePlayDurationHours" value is less the 24</li>
+            </ul>
+            <li>Time Play Window 2 - Used when more than 10 Time play products are added</li>
+            <ul>
+                <li>Scan starting Card or Armband Barcode. Will automatically add other barcodes in sequence for the amount purchased</li>
+                <li>Edit Start Time in incriments of 15 Minutes if "balance_timePlayDurationHours" value is less the 24</li>
+            </ul>
+          </ul>
+        </ul>
+        </div>
+
+
+
+       <div class="footer" id="footer-container">
+            
+        </div>
+    </div>
+   </div>
+<script src="script.js"></script>
+</body>
+
+</html>
