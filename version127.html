@@ -78,6 +78,34 @@
         </ul>
         </div>
 
+        <div class="version">
+            <h2>
+                <span>Establish a Base Tax method</span>
+            </h2>
+            <p>Establish a Retro Tax method for displaying tax charged on a reciept if Tax is required for location as well as future Tax Code method</p>
+            <ul>
+                <li>Update Location Information to handle Sales Tax Selections and settings</li>
+                <ul>
+                    <li>Add "Enable Sales Tax" toggle - Default to Off</li>
+                    <li>Add "Sales Tax Method" Toggle - Only enabled when Enable Sales Tax is "ON" - Defalut to Off </li>
+                    <ul>
+                        <li>When "OFF" and Sales Tax is Enabled - System will use a Retro Tax Method to determine the Tax amount to display on guest receipt. Will utilize the "Sales Tax" value field to calculate. Example: Product Value &divide Sales Tax Value = SubTotal. Product Value - Subtotal = Sales Tax Value </li>
+                        <li>When "ON" and Sales Tax is Enabled - System will us a Tax Code Table - FUTURE UPDATE</li>
+                    </ul>
+                </ul>
+                <li>Update Reciept layout to display Sales Tax if "Enable Sales Tax" is Enabled</li>
+            </ul>
+        
+        </div>
+
+        <div class="version">
+            <h2>
+                <span>Minor Bug Fixes</span>
+            </h2>
+            <p>Minor Bug fix to Shopify Sales Order Method refund when issuing Multiple Payment refund with cash not opening cash drawer</p>
+        
+        </div>
+
 
 
        <div class="footer" id="footer-container">
