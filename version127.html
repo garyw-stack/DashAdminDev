@@ -87,13 +87,18 @@
                 <li>Update Location Information to handle Sales Tax Selections and settings</li>
                 <ul>
                     <li>Add "Enable Sales Tax" toggle - Default to Off</li>
-                    <li>Add "Sales Tax Method" Toggle - Only enabled when Enable Sales Tax is "ON" - Defalut to Off </li>
+                    <li>Add "Sales Tax Method" Radio Selector - Only enabled when Enable Sales Tax is "ON" - Defalut to "Retro" </li>
                     <ul>
-                        <li>When "OFF" and Sales Tax is Enabled - System will use a Retro Tax Method to determine the Tax amount to display on guest receipt. Will utilize the "Sales Tax" value field to calculate. Example: Product Value &divide Sales Tax Value = SubTotal. Product Value - Subtotal = Sales Tax Value </li>
-                        <li>When "ON" and Sales Tax is Enabled - System will us a Tax Code Table - FUTURE UPDATE</li>
+                        <li>When "Retro" and Sales Tax is Enabled - System will use a Retro Tax Method to determine the Tax amount to display on guest receipt. Will utilize the "Sales Tax" value field to calculate. Example: Product Value &divide Sales Tax Value = SubTotal. Product Value - Subtotal = Sales Tax Value </li>
+                        <li>When "Tax Code" and Sales Tax is Enabled - System will us a Tax Code Table - FUTURE UPDATE</li>
                     </ul>
                 </ul>
                 <li>Update Reciept layout to display Sales Tax if "Enable Sales Tax" is Enabled</li>
+                <li>Update orders_table to have 2 new columns located between "channel" and "total_price"</li>
+                <ul>
+                    <li>"subtotal" - stores subtotal value when Sales Tax is enabled</li>
+                    <li>"tax" - stores tax value when Sales Tax is enabled</li>
+                </ul>
             </ul>
         
         </div>
@@ -102,7 +107,11 @@
             <h2>
                 <span>Minor Bug Fixes</span>
             </h2>
-            <p>Minor Bug fix to Shopify Sales Order Method refund when issuing Multiple Payment refund with cash not opening cash drawer</p>
+            <p>Minor Bug fixes</p>
+            <ul>
+                <li>Shopify Sales Order Method refund when issuing Multiple Payment refund with cash not opening cash drawer</li>
+                <li>Fix to remove Bonus Points when doing Kiosk Refunds</li>
+            </ul>
         
         </div>
 
