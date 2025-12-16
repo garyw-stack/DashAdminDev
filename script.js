@@ -128,7 +128,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
  // Edit Below 
    const footerText = `
-   Version history last updated: <strong>December 16, 2025</strong> • Maintained with care
+   Version history last updated: <strong>December 12, 2025</strong> • Maintained with care
     `;
 
   container.innerHTML = `
@@ -138,4 +138,24 @@ document.addEventListener('DOMContentLoaded', () => {
    `;
   });
 
+//Accordion
 
+  const coll = document.getElementsByClassName("collapsible");
+    for (let i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active1");
+            const content = this.nextElementSibling;
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+            } else {
+                // Close others first (accordion behavior)
+                for (let j = 0; j < coll.length; j++) {
+                    if (j !== i) {
+                        coll[j].classList.remove("active1");
+                        coll[j].nextElementSibling.style.maxHeight = null;
+                    }
+                }
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+        });
+    }

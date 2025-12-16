@@ -44,6 +44,7 @@
         color: white;
         margin: 0% 30% 2% 30%;
         text-transform: uppercase;
+        
     }
 
     .tbd {
@@ -387,6 +388,28 @@
 
    
 
+/* Accordion */
 
-
-
+.collapsible {
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            text-align: center;
+            border: none;
+            outline: none;
+            background-color: #f1f1f1;
+            font-size: x-large;
+            font-weight: bold;
+            margin-bottom: 20px;
+            border-style: solid;
+        }
+.active1, .collapsible:hover {
+            background-color: #22cffa;
+        }
+.content {
+            padding: 0 18px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out;
+            background-color: #f9f9f9;
+        }
