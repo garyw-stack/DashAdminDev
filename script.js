@@ -8,6 +8,7 @@
   const menuItems = [
     { href: 'index.html', text: 'Verison Overview' },
     { href: 'versionunknown.html', text: 'Version Unknown' },
+    { href: 'version128.html', text: 'Version 1.2.8' },
     { href: 'version127.html', text: 'Version 1.2.7' },
     { href: 'version126.html', text: 'Version 1.2.6' },
     { href: 'version125.html', text: 'Version 1.2.5' },
@@ -128,7 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
  // Edit Below 
    const footerText = `
-   Version history last updated: <strong>December 16, 2025</strong> • Maintained with care
+   Version history last updated: <strong>December 12, 2025</strong> • Maintained with care
     `;
 
   container.innerHTML = `
@@ -159,4 +160,3 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
-

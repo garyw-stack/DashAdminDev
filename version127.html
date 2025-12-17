@@ -23,7 +23,7 @@
     <!--Main Content-->
     <div class="container">
         <h1>Version 1.2.7 Notes</h1>
-        <h2 class="tbd">Pending Development Version</h2>
+        <h2 class="dev">Current Development Version</h2>
 
 
        <div class="version">
@@ -39,78 +39,11 @@
 
         <div class="version">
             <h2>
-                <span>Point of Sale logic</span>
-            </h2>
-            <p>Update Point of Sale logic to adjust All points to Comp points in the event that Paid Points = 0 when proceeding to Scan barcode window</p>
-        
-        </div>
-
-        <div class="version">
-            <h2>
-                <span>Shopify Time Play Products</span>
-            </h2>
-            <p>Update Shopify Sales Product Logic for Time Play Products</p>
-        <ul>
-          <li>Add Custom Metafield to Products on shopify</li>
-          <ul>
-            <li>balance_timePlayDurationHours - Value entry refers to hour duration from purchase - use (24) for all day</li>
-            <li>balance_timePlayValidCode - AA = Works for all attraction and games & LU = works on selected attraction</li>
-            <li>balance_timePlayValid - Used when LU is entered in the "balance_timePlayValidCode" field - Comma seperated values to determine the Attraction time play is valid</li>
-            <ul>
-                <li>1 = Thrill Rides</li>
-                <li>2 = Adult Rides</li>
-                <li>3 = Kids Rides</li>
-            </ul>
-          </ul>
-          <li>Add Additional Pop-up Windows for Scanning Cards and/or Armbands for Time Play Feature</li>
-          <ul>
-            <li>Time Play Window 1 - Used when less than 10 Time play products are added</li>
-            <ul>
-                <li>Add and Remove Scanned Cards and Armbands individually</li>
-                <li>Edit Start Time in incriments of 15 Minutes if "balance_timePlayDurationHours" value is less the 24</li>
-            </ul>
-            <li>Time Play Window 2 - Used when more than 10 Time play products are added</li>
-            <ul>
-                <li>Scan starting Card or Armband Barcode. Will automatically add other barcodes in sequence for the amount purchased</li>
-                <li>Edit Start Time in incriments of 15 Minutes if "balance_timePlayDurationHours" value is less the 24</li>
-            </ul>
-          </ul>
-        </ul>
-        </div>
-
-        <div class="version">
-            <h2>
-                <span>Establish a Base Tax method</span>
-            </h2>
-            <p>Establish a Retro Tax method for displaying tax charged on a reciept if Tax is required for location as well as future Tax Code method</p>
-            <ul>
-                <li>Update Location Information to handle Sales Tax Selections and settings</li>
-                <ul>
-                    <li>Add "Enable Sales Tax" toggle - Default to Off</li>
-                    <li>Add "Sales Tax Method" Radio Selector - Only enabled when Enable Sales Tax is "ON" - Defalut to "Retro" </li>
-                    <ul>
-                        <li>When "Retro" and Sales Tax is Enabled - System will use a Retro Tax Method to determine the Tax amount to display on guest receipt. Will utilize the "Sales Tax" value field to calculate. Example: Product Value &divide Sales Tax Value = SubTotal. Product Value - Subtotal = Sales Tax Value </li>
-                        <li>When "Tax Code" and Sales Tax is Enabled - System will us a Tax Code Table - FUTURE UPDATE</li>
-                    </ul>
-                </ul>
-                <li>Update Reciept layout to display Sales Tax if "Enable Sales Tax" is Enabled</li>
-                <li>Update orders_table to have 2 new columns located between "channel" and "total_price"</li>
-                <ul>
-                    <li>"subtotal" - stores subtotal value when Sales Tax is enabled</li>
-                    <li>"tax" - stores tax value when Sales Tax is enabled</li>
-                </ul>
-            </ul>
-        
-        </div>
-
-        <div class="version">
-            <h2>
                 <span>Minor Bug Fixes</span>
             </h2>
             <p>Minor Bug fixes</p>
             <ul>
                 <li>Shopify Sales Order Method refund when issuing Multiple Payment refund with cash not opening cash drawer</li>
-                <li>Fix to remove Bonus Points when doing Kiosk Refunds</li>
             </ul>
         
         </div>
