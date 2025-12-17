@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
  // Edit Below 
    const footerText = `
-   Version history last updated: <strong>December 12, 2025</strong> • Maintained with care
+   Version history last updated: <strong>December 17, 2025</strong> • Maintained with care
     `;
 
   container.innerHTML = `
@@ -159,4 +159,5 @@ document.addEventListener('DOMContentLoaded', () => {
                 content.style.maxHeight = content.scrollHeight + "px";
             }
         });
+
     }
