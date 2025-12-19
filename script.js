@@ -8,6 +8,7 @@
   const menuItems = [
     { href: 'index.html', text: 'Verison Overview' },
     { href: 'versionunknown.html', text: 'Version Unknown' },
+    { href: 'version129.html', text: 'Version 1.2.9' },
     { href: 'version128.html', text: 'Version 1.2.8' },
     { href: 'version127.html', text: 'Version 1.2.7' },
     { href: 'version126.html', text: 'Version 1.2.6' },
@@ -129,7 +130,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
  // Edit Below 
    const footerText = `
-   Version history last updated: <strong>December 17, 2025</strong> • Maintained with care
+   Version history last updated: <strong>December 19, 2025</strong> • Maintained with care
     `;
 
   container.innerHTML = `
@@ -139,7 +140,7 @@ document.addEventListener('DOMContentLoaded', () => {
    `;
   });
 
-//Accordion
+//Accordion for Milestones
 
   const coll = document.getElementsByClassName("collapsible");
     for (let i = 0; i < coll.length; i++) {
@@ -159,5 +160,4 @@ document.addEventListener('DOMContentLoaded', () => {
                 content.style.maxHeight = content.scrollHeight + "px";
             }
         });
-
     }
