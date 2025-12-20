@@ -130,7 +130,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
  // Edit Below 
    const footerText = `
-   Version history last updated: <strong>December 19, 2025</strong> • Maintained with care
+   Version history last updated: <strong>December 20, 2025</strong> • Maintained with care
     `;
 
   container.innerHTML = `
