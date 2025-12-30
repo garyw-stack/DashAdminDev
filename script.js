@@ -8,6 +8,7 @@
   const menuItems = [
     { href: 'index.html', text: 'Verison Overview' },
     { href: 'versionunknown.html', text: 'Version Unknown' },
+    { href: 'version1210.html', text: 'Version 1.2.10'},
     { href: 'version129.html', text: 'Version 1.2.9' },
     { href: 'version128.html', text: 'Version 1.2.8' },
     { href: 'version127.html', text: 'Version 1.2.7' },
@@ -123,15 +124,16 @@ document.addEventListener('keydown', (e) => {
 });
 
 
+
+
 //Footer JS
 document.addEventListener('DOMContentLoaded', () => {
    const container = document.getElementById('footer-container');
     if (!container) return;
 
- // Edit Below 
    const footerText = `
-   Version history last updated: <strong>December 20, 2025</strong> • Maintained with care
-    `;
+   Version history last updated: <strong>December 30, 2025</strong> • Maintained with care 
+    `; // Edit Text ONLY
 
   container.innerHTML = `
    <footer id="footer">
@@ -139,6 +141,8 @@ document.addEventListener('DOMContentLoaded', () => {
    </footer>
    `;
   });
+
+  
 
 //Accordion for Milestones
 
